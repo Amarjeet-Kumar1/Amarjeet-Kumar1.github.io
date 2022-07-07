@@ -341,6 +341,7 @@ section:nth-child(2n+1){
 	}
 
 	.timeline-box{
+		margin-left: 5%;
 		left: 8%;
 		width: 80%;
 	}
@@ -348,7 +349,7 @@ section:nth-child(2n+1){
 	left: 8%;
 }
 .timeline-box::after{
-	left: -3% !important;
+	left: -7% !important;
 
 }
 }
