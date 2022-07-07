@@ -156,6 +156,12 @@ section:nth-child(2n+1){
 
 
 /*common margin*/
+.m0 {
+    margin: 0;
+}
+.m-blue {
+    color: #2857a4;
+}
 .mb75px{
 	margin-bottom: 75px;
 }
@@ -285,28 +291,6 @@ section:nth-child(2n+1){
 	z-index: 2;
 }
 
-.timeline-box h3{
-	font-size: 2rem;
-	text-align: right;
-	color: blue;
-
-}
-.timeline-box h4{
-	font-size: 1.5rem;
-	text-align: right;
-	color: #eb6d2f;
-
-}
-.timeline-box h6{
-	font-size: 1rem;
-	text-align: right;
-	color: #3d82db;
-
-}
-.timeline-box p{
-	font-size: 1rem;
-	text-align: justify;
-}
 .company-logo{
 	position: absolute;
 	width: 30%;
@@ -318,7 +302,57 @@ section:nth-child(2n+1){
 	background-repeat: no-repeat;
 }
 
-/*education*/
+.experience-designation {
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+@media screen and (max-width: 600px){
+	
+
+	.timeline-divider{
+		left: 8%;
+	}
+
+	.timeline-box{
+		left: 8%;
+		width: 80%;
+	}
+	.timeline-box:nth-child(2n){
+	left: 8%;
+}
+.timeline-box::after{
+	left: -3% !important;
+
+}
+
+/*education
 .college-logo{
 	position: absolute;
 	width: 30%;
