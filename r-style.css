@@ -145,14 +145,18 @@ section:nth-child(2n+1){
 .skill-progress>div{
 	border-radius: 20px 0px 0px 20px;
     box-shadow: 1px 1px 5px 2px #989882;
+	position: relative;
 }
-
-.skill-name span{
+.skill-name{
+	position: absolute;
+	top: 22%;
+	left: 15%;
 	color: white;
     font-size: 1rem;
-    margin-left: 10px;
-    vertical-align: middle;
+	
 }
+
+
 
 
 /*common margin*/
@@ -185,6 +189,10 @@ section:nth-child(2n+1){
 }
 .sixty-per{
 	width: 60%;
+	height: inherit;
+}
+.hundred-per{
+	width: 100%;
 	height: inherit;
 }
 
@@ -329,6 +337,9 @@ section:nth-child(2n+1){
     color: grey;
     line-height: 20px;
 }
+.experience-description span{
+	color: blue;
+}
 
 .text-align-justify {
     text-align: justify;
@@ -357,13 +368,25 @@ section:nth-child(2n+1){
 /*education*/
 .college-logo{
 	position: absolute;
-	width: 30%;
+	width: 10%;
 	height: 30%;
 	left: 3%;
 	top: 3%;
-	background-size: contain;
-	background-image: url(images/iiitd_logo.png);
-	background-repeat: no-repeat;
+	
+	/* background-size: contain;
+	background-image: url(images/mit.jpg);
+	background-repeat: no-repeat; */
+	
+}
+.college-logo img{
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+
+}
+
+.college-logo:hover{
+	transform: scale(1.1);
 }
 
 
