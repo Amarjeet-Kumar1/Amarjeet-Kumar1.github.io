@@ -16,38 +16,30 @@ backTop.addEventListener('click', function(){
 });
 
 
-var navList = document.getElementsByClassName('nav-div');
+var navList = document.querySelectorAll('.nav-menu a');
+var id;
+for(var i=0; i< navList.length; i++){
+        navList[i].addEventListener('click', function(event){
+                event.preventDefault();
 
+                var sectionId = this.textContent.trim().toLowerCase();
 
-for(var i=0; i<navList.length;i++){
-    navList[i].addEventListener('click', divScroll);
-    }
+                var sectionTargeted = document.getElementById(sectionId);
 
-function divScroll(){
-    var value = this.getAttribute('data-value');
-    var initialPos = 0;
-    var finalPos;
-    if(value == 'about'){
-        finalPos = 329;
-    } else if(value == 'skills'){
-        finalPos = 810;
-    } else if(value == 'experience'){
-        finalPos = 1210;
-    } else if(value == 'education'){
-        finalPos = 2100;
-    } else if(value == 'portfolio'){
-        finalPos = 2805;
-    } else if(value == 'contact'){
-        finalPos = 4664.81;
-    }
-   
-    var id = setInterval(function(){
-        window.scrollBy(0, 50);
-        initialPos +=50;
-        if(initialPos >= finalPos){
-            clearInterval(id);
-            return;
-        }
-    }, 20);
+                id = setInterval(function(){
+                    scrollDiv(sectionTargeted)
+                }, 20);
+        });
 }
+
+function scrollDiv(sectionTargeted){
+    var coordinateTargeted = sectionTargeted.getBoundingClientRect();
+    if(coordinateTargeted.top <= 0){
+        clearInterval(id);
+        return;
+    }
+    window.scrollBy(0,50);
+}
+
+
 

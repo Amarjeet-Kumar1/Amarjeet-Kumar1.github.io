@@ -15,28 +15,60 @@
 		
 	<header id="body-header">
 		<nav>
+			<div class = "dropdown-menu text-right">
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class ="dropdown-list nav-menu">
+                    <ul class = "no-list-style">
+                        <li >
+                            <a href="#"> Home </a>
+                        </li>
+                        <li>
+                            <a href="#about"> About </a>
+                        </li>
+                        <li>
+                            <a href="#skills"> Skills </a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#education">Education</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+
+             </div>  
+
 			<ul class="horz-list text-center nav-menu">
 				<li>
 					<a href="#"> Home </a>
 				</li>
 				<li>
-					<a class="nav-div" data-value="about" > About </a>
+					<a class="nav-div" href="#about" > About </a>
 				</li>
 				<li>
-					<a class="nav-div" data-value="skills"> Skills </a>
+					<a class="nav-div" href="#skills"> Skills </a>
 				</li>
 				
 				<li>
-					<a class="nav-div" data-value="experience"> Experience </a>
+					<a class="nav-div" href="#experience"> Experience </a>
 				</li>
 				<li>
-					<a class="nav-div" data-value="education"> Education </a>
+					<a class="nav-div" href="#education"> Education </a>
 				</li>
 				<li>
-					<a class="nav-div" data-value="portfolio"> Portfolio </a>
+					<a class="nav-div" href="#portfolio"> Portfolio </a>
 				</li>
 				<li>
-					<a class="nav-div" data-value="contact"> Contact </a>
+					<a class="nav-div" href="#contact"> Contact </a>
 				</li>
 			</ul>
 		</nav>
@@ -337,7 +369,7 @@ achieve lasting impacts on <span>user experience.</span>
 			</h1>
 			<div class="contact-container">
 			<div class="feedback">
-				<form class="contact-form" action="#">
+				<form class="contact-form" >
 					<input type="text" id="name" name="name" placeholder="Your Name" required>
 					<input type="email" id="email" name="email" placeholder="Your Email" required>
 					<textarea id="input-message" name="input-message" rows="2" cols="40" placeholder="Message"></textarea> 
