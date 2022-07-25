@@ -493,4 +493,24 @@ button:focus{
 }
 
 
+#back-top{
+	position: fixed;
+	bottom: 3%;
+	right: 3%;
+	height: 10%;
+	width: 5%;
+	border-radius: 50%;
+	
+}
+
+
+.up-color{
+	color: rgb(117, 115, 233);
+}
+.up-color:hover{
+	transform: scale(0.8);
+}
+
+
+
 	
