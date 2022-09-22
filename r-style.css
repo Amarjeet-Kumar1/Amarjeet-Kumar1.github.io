@@ -269,6 +269,7 @@ section:nth-child(2n+1){
 
 .port-work{
 	 max-width: 300px;
+	 height: 300px;
     overflow: hidden;
     margin: 10px;
 	background-color: white;
@@ -281,6 +282,15 @@ section:nth-child(2n+1){
 .port-work img{
 	width: 100%;
 	height: 100%;
+}
+.port-work iframe{
+	position: relative;
+	 top: -150px;
+	left: -150px; 
+	padding: 0%;
+	width: 200%; 
+	height: 200%; 
+	transform: scale(0.5);
 }
 
 .portfolio-details {
