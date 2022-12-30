@@ -602,6 +602,12 @@ width: 90%;
     .nav-menu {
         display: none;
     } 
+#contact-form-container {
+        width: 100%;
+    }
+.contact-details span{
+word-wrap: break-word;
+}
 }
 
 @media only screen and (max-width: 768px) {
