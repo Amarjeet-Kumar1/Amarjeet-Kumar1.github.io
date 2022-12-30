@@ -139,8 +139,9 @@ body{
 }
 #about p{
 width: 60%;
-	margin-top: 35px;
+	
 	margin: auto;
+margin-top: 35px;
 	font-size: 1.5rem;
 	text-align: justify;
 
